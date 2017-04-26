@@ -1,6 +1,9 @@
 <?php
 require_once('bootstrap.php');
 
+/**
+ * Exemplo 1
+ */
 use MyApplication\serviceLocator\model2\ServiceLocator;
 use MyApplication\model\Model;
 use MyApplication\model\PessoaModel;
@@ -13,6 +16,9 @@ $container->add('pessoaController', new PessoaController($container->get('pessoa
 $container->get('pessoaController')->salvar('Pedro');
 
 
+/**
+ * Exemplo 2
+ */
 //use MyApplication\serviceLocator\model1\ServiceLocator;
 //use MyApplication\model\Model;
 //use MyApplication\model\PessoaModel;
@@ -25,10 +31,16 @@ $container->get('pessoaController')->salvar('Pedro');
 //
 //echo $container->get('pessoaController')->salvar('Pedro');
 
+/**
+ * Exemplo 3
+ */
 //$container = DI\ContainerBuilder::buildDevContainer();
 //$pessoaController = $container->get('MyApplication\controller\PessoaController');
-//$pessoaController->salvar('Pedro');
+echo $pessoaController->salvar('Pedro');
 
+/**
+ * Exemplo 4 uso manual
+ */
 //use MyApplication\model\Model;
 //use MyApplication\model\PessoaModel;
 //use MyApplication\controller\PessoaController;

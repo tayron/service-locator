@@ -36,7 +36,7 @@ $container->get('pessoaController')->salvar('Pedro');
  */
 //$container = DI\ContainerBuilder::buildDevContainer();
 //$pessoaController = $container->get('MyApplication\controller\PessoaController');
-echo $pessoaController->salvar('Pedro');
+//echo $pessoaController->salvar('Pedro');
 
 /**
  * Exemplo 4 uso manual

@@ -15,7 +15,6 @@ $container->add('pessoaModel', new PessoaModel($container->get('model')));
 $container->add('pessoaController', new PessoaController($container->get('pessoaModel')));
 $container->get('pessoaController')->salvar('Pedro');
 
-
 /**
  * Exemplo 2
  */
